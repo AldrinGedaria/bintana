@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aldrin Gedaria is a UI, graphic, and digital designer, utilizing tools like Photoshop, Illustrator, Figma, and Canva to craft unique and precise design solutions. From conceptualizing advertising materials to animating web elements, Aldrin brings innovative ideas to life.">
+    <meta name="keywords" content="Aldrin Gedaria, UI design, graphic design, digital design, Photoshop, Illustrator, Figma, Canva, creative designer, advertising materials, web animations, design solutions">
+
+    <meta property="og:site_name" content="Aldrin Gedaria Portfolio">
+    <meta property="og:title" content="Aldrin Gedaria Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./01-ASSETS/03-CANVAS-ELEMENTS/01-PROFILE-PICTURE.jpg" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:url" content="https://your-portfolio-url.com"/>
+    
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./02-styles/nav-style.css">
+    <link rel="stylesheet" type="text/css" href="./02-styles/main-styles.css">
+    <link rel="stylesheet" type="text/css" href="./02-styles/footer-style.css">
+
+    <!-- website-icon -->
+    <link rel="icon" type="image/png" href="./01-images/01-ASSETS/enri-logo.svg">
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- split-type -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- lenis smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <title>Bintana | uPVC WINDOWS AND DOORS </title>
+
+</head>
+<body>
+    <nav class="grid-6">
+        <div class="company button-clear">
+            <p class="up-case semi-bold">bintana</p>
+        </div>
+        <div class="nav_list col-span-4">
+            <a href="#about-section">
+                <div class="nav_item button-clear">
+                    <p class="up-case semi-bold">about</p>
+                </div>
+            </a>
+            <div class="nav_item font-color-black-25 button-clear">
+                <p class="up-case semi-bold">/</p>
+            </div>
+            <a href="#project-section">
+                <div class="nav_item button-clear">
+                    <p class="up-case semi-bold">projects</p>
+                </div>
+            </a>
+            <div class="nav_item font-color-black-25 button-clear">
+                <p class="up-case semi-bold">/</p>
+            </div>
+            <a href="#profile-and-glass-section">
+                <div class="nav_item button-clear">
+                    <p class="up-case semi-bold">frames & glass</p>
+                </div>
+            </a>
+            <div class="nav_item font-color-black-25 button-clear">
+                <p class="up-case semi-bold">/</p>
+            </div>
+            <a href="#faq-section">
+                <div class="nav_item button-clear">
+                    <p class="up-case semi-bold">faq's</p>
+                </div>
+            </a>
+        </div>
+        <div class="nav_list-mobile">
+            <div class="nav_item button-clear">
+                <p class="p-big semi-bold">=</p>
+            </div>
+        </div>
+        <div class="quote-btn btn">
+            <a href="#footer-section">
+                <div class="icon-button button">
+                    <p class="up-case semi-bold">+</p>
+                </div>
+                <div class="button">
+                    <p class="up-case semi-bold">get a quote</p>
+                </div>
+            </a>
+        </div>
+        <div class="mobile_nav_wrapper col-span-3">
+            <div class="mobile_nav-layout outer-bento">
+                <div class="mobile_nav_list mt-6vh">
+                    <a href="#about-section">
+                        <div class="nav_item button-clear">
+                            <h3 class="up-case">about</h3>
+                        </div>
+                    </a>
+                    <div class="border-black"></div>
+                    <a href="#project-section">
+                        <div class="nav_item button-clear">
+                            <h3 class="up-case">projects</h3>
+                        </div>
+                    </a>
+                    <div class="border-black"></div>
+                    <a href="#profile-and-glass-section">
+                        <div class="nav_item button-clear">
+                            <h3 class="up-case">frames & glass</h3>
+                        </div>
+                    </a>
+                    <div class="border-black"></div>
+                    <a href="#faq-section">
+                        <div class="nav_item button-clear">
+                            <h3 class="up-case">faq's</h3>
+                        </div>
+                    </a>
+                    <div class="border-black"></div>
+                </div>
+                <div class="send-file-container mt-4vh">
+                    <div class="send-file-layout inner-bento">
+                        <p class="semi-bold p-big">Reach out or Send the File.</p>
+                        <p class="mt-1vh">Feel free to send us your inquiries or requests by connecting with us through our socials or email..</p>
+                    </div>
+                    <div class="border-gray-light"></div>
+                    <div class="social-links inner-bento grid-3">
+                        <a href="https://www.facebook.com/ENRIuPVCANDALUMINUM" target="_blank" rel="noopener noreferrer">
+                            <div class="facebook-button small-button">
+                                <p class="up-case semi-bold">facebook</p>
+                            </div>
+                        </a>
+                        <a href="viber://add?number=639501234567" target="_blank" rel="noopener noreferrer">
+                            <div class="small-button">
+                                <p class="up-case semi-bold">viber</p>
+                            </div>
+                        </a>
+                        <a href="mailto:enriupvcandaluminum@gmail.com">
+                            <div class="small-button">
+                                <p class="up-case semi-bold">e-mail</p>
+                            </div>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero-section" class="dvh-height column-flex">
+            <div class="hero-upper-container outer-bento">
+                <div class="hero-h1 up-case mt-8vh">
+                    <h1>framing views, <br>shaping spaces.</h1>
+                </div>
+                <div id="hero-send-file-container" class="send-file-container mt-8vh">
+                    <div class="send-file-layout inner-bento">
+                        <p class="semi-bold p-big">Reach out or Send the File.</p>
+                        <p class="mt-1vh">Feel free to send us your inquiries or requests by connecting with us through our socials or email.</p>
+                    </div>
+                    <div class="border-gray-light"></div>
+                    <div class="social-links inner-bento grid-3">
+                        <a href="https://www.facebook.com/ENRIuPVCANDALUMINUM" target="_blank" rel="noopener noreferrer">
+                            <div class="facebook-button small-button">
+                                <p class="up-case semi-bold">facebook</p>
+                            </div>
+                        </a>
+                        <a href="viber://add?number=639501234567" target="_blank" rel="noopener noreferrer">
+                            <div class="small-button">
+                                <p class="up-case semi-bold">viber</p>
+                            </div>
+                        </a>
+                        <a href="mailto:enriupvcandaluminum@gmail.com">
+                            <div class="small-button">
+                                <p class="up-case semi-bold">e-mail</p>
+                            </div>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div class="hero-lower-container outer-bento grid-4">
+                <div class="years-count-layout inner-bento">
+                    <div class="chart-number">
+                        <h2>4</h2>
+                    </div>
+                    <div class="chart-decription-wrapper mt-8vh">
+                        <div class="chart-title"><p class="semi-bold p-big">Years in the Idustry</p></div>
+                        <div class="chart-decription mt-1vh"><p>Our commitment to growth and improvement shines through our years in the industry.</p></div>
+                    </div>
+                </div>
+                <div class="project-count-layout inner-bento">
+                    <div class="chart-number">
+                        <h2>30+</h2>
+                    </div>
+                    <div class="chart-decription-wrapper mt-8vh">
+                        <div class="chart-title"><p class="semi-bold p-big">Projects</p></div>
+                        <div class="chart-decription mt-1vh"><p>The increasing number is a testament to the quality of our services and the satisfaction of our customers. </p></div>
+                    </div>
+                </div>
+                <div class="commitment-count-layout inner-bento">
+                    <div class="chart-number">
+                        <h2>100%</h2>
+                    </div>
+                    <div class="chart-decription-wrapper mt-8vh">
+                        <div class="chart-title"><p class="semi-bold p-big">Commitment</p></div>
+                        <div class="chart-decription mt-1vh"><p>Despite our success, we never cease striving for improvement. We are dedicated to exceeding client expectations.</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-list flex">
+                    <div class="testimonial-item-wrapper flex">
+                        <div class="testimonial-item inner-bento column-flex">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-title"><p class="semi-bold p-big">Would Recommend!!</p></div>
+                                <div class="testimonial-decription mt-1vh"><p>It was a pleasure to work with Jeppe. He quickly understood the tone and mood of the film, and helped develop an impressive sound atmosphere for our 3D hero film.</p></div>
+                            </div>
+                            <div class="testimonee-wrapper mt-8vh">
+                                <div class="testimonee-title"><p class="semi-bold">Aldrin Gedaria</p></div>
+                                <div class="testimonee-decription"><p>Architect</p></div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item inner-bento column-flex">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-title"><p class="semi-bold p-big">Fast Production!!</p></div>
+                                <div class="testimonial-decription mt-1vh"><p>He immediately captured the essence of our concept, which he impressively translated into sound in a short time. In addition to being an extremely pleasant partner.</p></div>
+                            </div>
+                            <div class="testimonee-wrapper mt-8vh">
+                                <div class="testimonee-title"><p class="semi-bold">Andreas Omvik</p></div>
+                                <div class="testimonee-decription"><p>Photographer & film producer</p></div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item testimonial-form-container inner-bento column-flex">
+                            <div class="testimonial-wrapper testimonial-form-wrapper">
+                                <div class="testimonial-title"><p class="semi-bold p-big">We value your feedback!</p></div>
+                                <div class="testimonial-decription mt-1vh"><p>Your testimonial may help others make informed decisions. <br>Thank you!</p></div>
+                            </div>
+                            <div class="testimonial-button-wrapper mt-8vh">
+                                <div class="testimonial-button small-button">
+                                    <p class="up-case semi-bold">testimonial form</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-button-container flex">
+                        <div id="PrevSlide" class="read-more-button small-button">
+                            <p class="up-case semi-bold"> < </p>
+                        </div>
+                        <div id="NextSlide" class="read-more-button small-button">
+                            <p class="up-case semi-bold"> > </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-section">
+            <div class="about-wrapper outer-bento-transparent">
+                <div class="about-layout grid-4 mt-25vh mb-25vh">
+                    <div class="about-title title inner-bento-transparent">
+                        <div class="circle"></div>
+                        <p>Our Story</p>
+                    </div>
+                    <div class="about-text col-span-3 inner-bento-transparent">
+                        <h4 data-bg-color="#D9D9D9" data-fg-color="#454545"><span class="text-indent"></span><span class="up-case semi-bold">bintana</span>, formerly ENRI uPVC & ALUMINUM, has specialized in fabrication of UPVC and aluminum windows and doors since 2021. Our mission, reflects our commitment to enhancing your home or business with quality windows.</h4>
+                        <div class="about-btn btn mt-2vh">
+                            <div class="icon-button button">
+                                <p class="up-case bold">+</p>
+                            </div>
+                            <div class="button">
+                                <p class="up-case semi-bold">read about</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project-section">
+            <div class="projects-layout grid-3">
+                <div class="projects-item-title outer-bento">
+                    <div class="projects-item-title-wrapper inner-bento-transparent">
+                        <div class="project-title title">
+                            <div class="circle"></div>
+                            <p>Featured Projects</p>
+                        </div>
+                        <div class="project-title-header mt-8vh">
+                            <h5 class="up-case">our works</h5>
+                            <p class="mt-1vh"> Despite our success, we never cease striving for improvement. We are dedicated to exceeding client expectations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="work-background">
+                        <img src="./01-IMAGES/02-BACKGROUND-IMAGES/milad-fakurian-7wUorDiCMSU-unsplash.jpg" alt="Photo by Ivan Bandura on Unsplash">
+                    </div>
+                    <div class="work-thumbnail">
+                        <img src="./01-IMAGES/03-THUMBNAILS/Work-1.jpg" alt="">
+                    </div>
+                    <div class="work-title-wrapper">
+                        <div class="work-title title-blur"><p class="up-case semi-bold">HERMOSA RESIDENCE</p></div>
+                        <div class="work-year title-blur"><p class="up-case">2024</p></div>
+                    </div> 
+                </div>
+                <div class="projects-item">
+                    <div class="work-background">
+                        <img src="./01-images/02-BACKGROUND-IMAGES/mitchel-lensink-hdajoMFYeu0-unsplash.jpg" alt="Photo by Mitchel Lensink on Unsplash">
+                    </div>
+                    <div class="work-thumbnail">
+                        <img src="" alt="">
+                    </div>
+                    <div class="work-title-wrapper">
+                        <div class="work-title title-blur"><p class="up-case semi-bold">adding soon</p></div>
+                        <div class="work-year title-blur up-case"><p class="up-case">n/a</p></div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="profile-and-glass-section">
+            <div class="profile-and-glass-layout outer-bento">
+                <div class="profile-and-glass-title-container inner-bento-transparent">
+                    <div class="profile-and-glass-title title">
+                        <div class="circle"></div>
+                        <p>Profile & Glass</p>
+                    </div>
+                    <div class="profile-and-glass-title-header mt-1vh">
+                        <h5 class="up-case">Ready for customization based on your windows & door schedule.</h5>
+                    </div>
+                </div>
+                <div class="profile-and-glass-list grid-2 mt-1vh">
+                    <div class="profile-and-glass-item inner-bento">
+                        <div class="profile-and-glass-heading">
+                            <p class="semi-bold up-case p-big">glass</p>
+                            <p class="mt-1-half-vh">Lorem ipsum dolor sit amet consectetur. A phasellus vitae sodales convallis elit egestas placerat ut viverra.</p>
+                        </div>
+                        <div class="profile-and-glass-options grid-3 mt-4vh">
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">glass thickness</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">6mm thk</p>
+                                    <p class="up-case border-black">8mm thk</p>
+                                    <p class="up-case border-black">10mm thk</p>
+                                    <p class="up-case border-black">12mm thk</p>
+                                </div>
+                            </div>
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">glass quality</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">annealed glass</p>
+                                    <p class="up-case border-black">tempered glass</p>
+                                    <p class="up-case border-black">double glazed</p>
+                                </div>
+                            </div>
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">glass color</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">clear glass</p>
+                                    <p class="up-case border-black">reflective glass</p>
+                                    <div class="reflective-glass-list column-flex">
+                                        <p class="up-case">- bronze</p>
+                                        <p class="up-case">- brown</p>
+                                        <p class="up-case">- green</p>
+                                        <p class="up-case">- blue</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-and-glass-item inner-bento">
+                        <div class="profile-and-glass-heading">
+                            <p class="semi-bold up-case p-big">aluminum profiles</p>
+                            <p class="mt-1-half-vh">Lorem ipsum dolor sit amet consectetur. A phasellus vitae sodales convallis elit egestas placerat ut viverra.</p>
+                        </div>
+                        <div class="profile-and-glass-options grid-3 mt-4vh">
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">aluminum series</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">798 series</p>
+                                    <p class="up-case border-black">900 series</p>
+                                </div>
+                            </div>
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">frame color</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">white</p>
+                                    <p class="up-case border-black">black</p>
+                                    <p class="up-case border-black">analoc</p>
+                                    <p class="up-case border-black">dark gray</p>
+                                    <p class="up-case border-black">wood type</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-and-glass-item inner-bento">
+                        <div class="profile-and-glass-heading">
+                            <p class="semi-bold up-case p-big">upvc profile</p>
+                            <p class="mt-1-half-vh">Lorem ipsum dolor sit amet consectetur. A phasellus vitae sodales convallis elit egestas placerat ut viverra.</p>
+                        </div>
+                        <div class="profile-and-glass-options grid-3 mt-4vh">
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">sl series</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">sl3000</p>
+                                    <p class="up-case border-black">sl4000</p>
+                                    <p class="up-case border-black">sl5000</p>
+                                    <p class="up-case border-black">sl6000</p>
+                                </div>
+                            </div>
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">frame color</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">white</p>
+                                    <p class="up-case border-black">black</p>
+                                    <p class="up-case border-black">golden oak</p>
+                                    <p class="up-case border-black">mahogany red</p>
+                                    <p class="up-case border-black">wenge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-and-glass-item inner-bento">
+                        <div class="profile-and-glass-heading">
+                            <p class="semi-bold up-case p-big">screen</p>
+                            <p class="mt-1-half-vh">Lorem ipsum dolor sit amet consectetur. A phasellus vitae sodales convallis elit egestas placerat ut viverra.</p>
+                        </div>
+                        <div class="profile-and-glass-options grid-3 mt-4vh">
+                            <div class="profile-and-glass-options-item">
+                                <div class="profile-and-glass-options-item-heading">
+                                    <p class="semi-bold up-case">screen type</p>
+                                </div>
+                                <div class="profile-and-glass-options-item-list column-flex mt-1vh">
+                                    <p class="up-case border-black">fiber mesh screen</p>
+                                    <p class="up-case border-black">hard mesh screen</p>
+                                    <p class="up-case border-black">Polyester mesh screen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="window-color-section">
+            <div class="window-color-layout outer-bento landscape">
+                <video autoplay muted loop playsinline src="./01-images/04-VIDEOS/window-colors.mp4"></video>
+            </div>
+        </section>
+        <section id="faq-section">
+            <div class="faq-layout outer-bento grid-2">
+                <div class="faq-title-container inner-bento-transparent">
+                    <div class="faq-title title">
+                        <div class="circle"></div>
+                        <p>Frequently Asked Question</p>
+                    </div>
+                    <div class="faq-title-header mt-1vh">
+                        <h5 class="up-case">got  questions? we've got answers</h5>
+                    </div>
+                </div>
+                <div class="faq-list column-flex">
+                    <div class="faq-item inner-bento">
+                        <div class="faq-question space-between toggle">
+                            <p class="p-big medium">Do you offer free on-site measurement?</p>
+                            <p class="p-big semi-bold">+</p>
+                        </div>
+                        <div class="faq-answer content grid-1">
+                            <div class="inside">
+                                <p class="mt-2vh">Once you agree to the quotation, we’ll be happy to proceed with the actual measurement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item inner-bento">
+                        <div class="faq-question space-between toggle">
+                            <p class="p-big medium">Can I get a free quote?</p>
+                            <p class="p-big semi-bold">+</p>
+                        </div>
+                        <div class="faq-answer content grid-1">
+                            <div class="inside">
+                                <p class="mt-2vh">To get a free quote, you may send the details such as the quantity, dimensions, frame type, glass, and color, or simply send the schedule of windows and doors measurement to our socials, or email.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item inner-bento">
+                        <div class="faq-question space-between toggle">
+                            <p class="p-big medium">Free Delivery?</p>
+                            <p class="p-big semi-bold">+</p>
+                        </div>
+                        <div class="faq-answer content grid-1">
+                            <div class="inside">
+                                <p class="mt-2vh">We offer free shipping on orders ₱100,000 or more within Luzon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item inner-bento">
+                        <div class="faq-question space-between toggle">
+                            <p class="p-big medium">Where do you deliver and install?</p>
+                            <p class="p-big semi-bold">+</p>
+                        </div>
+                        <div class="faq-answer content grid-1">
+                            <div class="inside">
+                                <p class="mt-2vh">Currently, we ship within Luzon, Philippines. If you are interested in placing an order outside of Luzon, please contact us at enriupvcglassandaluminum@gmail.com.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item inner-bento">
+                        <div class="faq-question space-between toggle">
+                            <p class="p-big medium">What warranty do you offer?</p>
+                            <p class="p-big semi-bold">+</p>
+                        </div>
+                        <div class="faq-answer content grid-1">
+                            <div class="inside">
+                                <p class="mt-2vh">Our products are built to last. If one of your products has been damaged, please get in touch with us at hello@holcombstudio.com.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer-section">
+            <div class="footer-layout outer-bento">
+                <div class="footer-cta grid-4">
+                    <div class="send-file-container buzz">
+                        <div class="send-file-layout inner-bento">
+                            <p class="semi-bold p-big">Reach out or Send the File.</p>
+                            <p class="mt-1vh">Feel free to send us your inquiries or requests by connecting with us through our socials or email.</p>
+                        </div>
+                        <div class="border-gray-light"></div>
+                        <div class="social-links inner-bento grid-3">
+                            <a href="https://www.facebook.com/ENRIuPVCANDALUMINUM" target="_blank" rel="noopener noreferrer">
+                                <div class="facebook-button small-button">
+                                    <p class="up-case semi-bold">facebook</p>
+                                </div>
+                            </a>
+                            <a href="viber://add?number=639501234567" target="_blank" rel="noopener noreferrer">
+                                <div class="small-button">
+                                    <p class="up-case semi-bold">viber</p>
+                                </div>
+                            </a>
+                            <a href="mailto:enriupvcandaluminum@gmail.com">
+                                <div class="small-button">
+                                    <p class="up-case semi-bold">e-mail</p>
+                                </div>
+                            </a>                            
+                        </div>
+                    </div>
+                    <div class="profile-info inner-bento-transparent">
+                        <div class="profile-item">
+                            <div class="profile-label">
+                                <p>Owner</p>
+                            </div>
+                            <div class="profile-value mt-1vh">
+                                <p class="up-case semi-bold p-big">enri o. palad</p>
+                            </div>
+                        </div>
+                        <div class="profile-item mt-2vh">
+                            <div class="profile-label">
+                                <p>Business</p>
+                            </div>
+                            <div class="profile-value mt-1vh">
+                                <p class="p-big"><span class="semi-bold up-case"> Bintana </span>- Fabrication of uPVC and Aluminum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info inner-bento-transparent">
+                        <div class="contact-item">
+                            <div class="contact-label">
+                                <p>Main Office</p>
+                            </div>
+                            <div class="contact-value mt-1vh">
+                                <p class="semi-bold p-big">Balsik, Hermosa, Bataan, Central Luzon, 2111</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mt-2vh">
+                            <div class="contact-label">
+                                <p>Phone</p>
+                            </div>
+                            <div class="contact-value mt-1vh">
+                                <p class="up-case semi-bold p-big">+63 955 342 6538</p>
+                                <p class="up-case semi-bold p-big mt-1-half-vh">+63 907 509 7500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info inner-bento-transparent">
+                        <div class="contact-item">
+                            <div class="contact-label">
+                                <p>Fabrication Factory</p>
+                            </div>
+                            <div class="contact-value mt-1vh">
+                                <p class="semi-bold p-big">Balsik, Hermosa, Bataan, Central Luzon, 2111</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mt-2vh">
+                            <div class="contact-label">
+                                <p>Phone</p>
+                            </div>
+                            <div class="contact-value mt-1vh">
+                                <p class="up-case semi-bold p-big">+63 955 342 6538</p>
+                                <p class="up-case semi-bold p-big mt-1-half-vh">+63 907 509 7500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back-to-top-btn-wrapper col-span-4 mt-8vh">
+                        <div class="back-to-top-btn btn">
+                            <a href="#">
+                                <div class="icon-button button">
+                                    <p class="up-case semi-bold">+</p>
+                                </div>
+                                <div class="button">
+                                    <p class="up-case semi-bold">back to top</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-gray"></div>
+            <div class="footer-credits grid-2 outer-bento">
+                <div class="footer-credits-left">
+                    <p class="up-case">© <span id="year"> </span> | bintana</p>
+                </div>
+                <div class="footer-credits-right left-end up-case">
+                    <p>designed by: aldrin gedaria</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./03-scripts/animation.js"></script>
+</body>
+</html>

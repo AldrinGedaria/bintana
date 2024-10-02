@@ -1,0 +1,167 @@
+.hero-h1{
+    margin-left: var(--rem-1);
+}
+.hero-upper-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#hero-send-file-container{
+    width: calc((var(--column-width) * 3) - var(--grid-gap--main));
+    margin-left: calc(var(--column-width) * 9);
+}
+.social-links.inner-bento{
+    padding: .5rem;
+}
+.social-links > a{
+    max-width: 100%;
+}
+.testimonial-list{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--rem-1);
+}
+.testimonial-item-wrapper{
+    width: 100%;
+}
+.testimonial-item{
+    min-width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.testimonial-form-container.inner-bento, .testimonial-form-wrapper, .testimonial-button-title{
+    padding: var(--rem-half);
+}
+.testimonial-button.small-button{
+    width: calc(100% - (var(--rem-half) * 5) - (var(--p-s-font) * 2));
+}
+.arrow-button-container{
+    position: absolute;
+    bottom: var(--rem-half);
+    right: var(--rem-half);
+}
+.read-more-button.small-button{
+    padding: var(--rem-fourth) var(--rem-half);
+}
+#about-section, #project-section, #profile-and-glass-section, #window-color-section, #faq-section, #footer-section{
+    margin-top: calc(-1 * var(--grid-gap--main));
+}
+.about-layout{
+    align-items: flex-start;
+}
+.about-wrapper{
+    background-image: url("./01-images/02-BACKGROUND-IMAGES/augustine-wong-PxypFiQMkIk-unsplash.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.text-indent {
+    margin-left: calc((var(--column-width) * 4) + 1rem);
+}
+.projects-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+.projects-item .work-background img,
+.projects-item .work-thumbnail img {
+    transition: transform 0.3s ease;
+}
+.projects-item:hover .work-background img,
+.projects-item:hover .work-thumbnail img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.work-thumbnail{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.work-thumbnail img{
+    width: 100%;
+    height: 100%;
+}
+.work-title-wrapper{
+    display: flex;
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+}
+.projects-item-title{
+    background-image: url("./01-images/02-BACKGROUND-IMAGES/ivan-bandura-WhIff5iuW-E-unsplash.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.projects-item-title-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reflective-glass-list{
+    margin-left: var(--rem-half);
+}
+.window-color-layout.outer-bento{
+    border-radius: 1.5rem;
+    padding: 0;
+    overflow: hidden;
+}
+.faq-question{
+    cursor: pointer;
+}
+.content {
+    grid-template-rows: 0fr;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+.content .inside {
+    min-height: 0;
+}
+.content.expanded {
+    grid-template-rows: 1fr;
+}
+.back-to-top-btn{
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1024px) {
+    #hero-send-file-container{
+        width: calc((var(--column-width) * 2) - var(--grid-gap--main));
+        margin-left: calc(var(--column-width) * 2);
+    }
+    .about-layout.mt-25vh.mb-25vh{
+        margin: 0;
+    }
+    .text-indent {
+        margin-left: 0;
+    }
+    .projects-layout.grid-3, .footer-cta.grid-3{
+        grid-template-columns: var(--grid-2);
+    }
+}
+
+
+@media only screen and (max-width: 520px) {
+    #hero-send-file-container{
+        width: 100%;
+        margin-left: 0;
+    }
+    .projects-layout.grid-3, .footer-cta.grid-3{
+        grid-template-columns: var(--grid-1);
+    }
+    .profile-and-glass-list.grid-2, .faq-layout.grid-2{
+        grid-template-columns: var(--grid-1);
+    }
+    .profile-and-glass-options.grid-3{
+        grid-template-columns: var(--grid-2);
+        row-gap: var(--rem-2);
+    }
+    .window-color-layout.landscape{
+        aspect-ratio: 1 / 1;
+    }
+    
+}
